@@ -1,8 +1,8 @@
 import xbmcaddon,os,requests,xbmc,xbmcgui,urllib,urllib2,re,xbmcplugin
 
 def CATEGORIES():
-   addDir3('Live Tv','https://drive.google.com/open?id=14B6WIjjriaceZSLjP2ym-9ChAy9xCCUi/LiveTv.txt',3,'','','')
-   addDir3('Movies','https://drive.google.com/open?id=127Y-AUpgkaclUsK4AR6efCUBnDQzf7hS/Movies.txt',4,'','','')
+   addDir3('Live Tv','https://drive.google.com/file/d/14B6WIjjriaceZSLjP2ym-9ChAy9xCCUi/view?usp=sharing',3,'','','')
+   addDir3('Movies','https://drive.google.com/file/d/127Y-AUpgkaclUsK4AR6efCUBnDQzf7hS/view?usp=sharing',4,'','','')
 
 def channel():
    r = requests.get('https://e682ab385d0e9eba146f8407acc0383644a1d276.googledrive.com/host/0B88fGGARV1mmcjdJaG1rX1N2NXM/channels.txt')
