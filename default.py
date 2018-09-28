@@ -3,7 +3,9 @@ import xbmcaddon,os,requests,xbmc,xbmcgui,urllib,urllib2,re,xbmcplugin
 def CATEGORIES():
    addDir3('Live Tv','https://drive.google.com/file/d/14B6WIjjriaceZSLjP2ym-9ChAy9xCCUi/view?usp=sharing',3,'','','')
    addDir3('Movies','https://drive.google.com/file/d/127Y-AUpgkaclUsK4AR6efCUBnDQzf7hS/view?usp=sharing',4,'','','')
-
+   addDir3('TV Shows','https://docs.google.com/document/d/1pstQQStFqLXWpUMQTzg0tKiJUoivC22rkBBqSXWn_Mg/edit?usp=sharing',5,'','','')
+   addDir3('Channels','https://drive.google.com/file/d/1odlUS2kH27O2oOQNrqlg5U1CxHQ28uiH/view?usp=sharing',6,'','','')
+   addDir3('Sport Channels','https://drive.google.com/file/d/1cgdDra_3fVHgrdYoymtn9OgDf9KyWBJd/view?usp=sharing',7,'','','')
 def channel():
    r = requests.get('https://drive.google.com/file/d/1beBxGFPT7vyejbci90nXVx35-VFmrhTk/view?usp=sharing')
    match = re.compile('name= (.+?) url= "(.+?)" logo= "(.+?)"').findall(r.content)
@@ -11,7 +13,7 @@ def channel():
      addLink(name,link,logo,'','')
 	 
 def Moviess():
-   r = requests.get('https://drive.google.com/file/d/1beBxGFPT7vyejbci90nXVx35-VFmrhTk/view?usp=sharing')
+   r = requests.get('https://drive.google.com/file/d/127Y-AUpgkaclUsK4AR6efCUBnDQzf7hS/view?usp=sharing')
    match = re.compile('name= (.+?) url= "(.+?)" logo= "(.+?)"').findall(r.content)
    for name,link, logo in match:
      addLink(name,link,logo,'','')
