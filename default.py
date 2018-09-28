@@ -5,7 +5,7 @@ def CATEGORIES():
    addDir3('Movies','https://drive.google.com/file/d/127Y-AUpgkaclUsK4AR6efCUBnDQzf7hS/view?usp=sharing',4,'','','')
 
 def channel():
-   r = requests.get('https://e682ab385d0e9eba146f8407acc0383644a1d276.googledrive.com/host/0B88fGGARV1mmcjdJaG1rX1N2NXM/channels.txt')
+   r = requests.get('https://drive.google.com/file/d/1beBxGFPT7vyejbci90nXVx35-VFmrhTk/view?usp=sharing')
    match = re.compile('name= (.+?) url= "(.+?)" logo= "(.+?)"').findall(r.content)
    for name,link, logo in match:
      addLink(name,link,logo,'','')
